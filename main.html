@@ -4,10 +4,31 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		#container{
+			margin:20px;
+		}
+		#container::before{
+			content:"Before element";
+			color:#f00;
+			font-size:20px;	
+		}
+
+		#container::after{
+			content:"After element";
+			color:#f00;
+			font-size:20px;	
+		}
+
+		
+	</style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	<div id="container">
+		This is the main element you'll work with.
+	</div>
     <script type="text/javascript" src="./script.js">
 </script>
 
